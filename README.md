@@ -3,29 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Infra  Solution</title>
+    <title>Smart Infra Solutions - Modern IT Infrastructure Services</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background: #0073e6; color: #fff; padding: 20px; font-size: 28px; text-align: center; }
-        section { padding: 40px 20px; text-align: center; }
-        .services, .about { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .content-box { background: #fff; padding: 20px; width: 300px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease-in-out; }
-        .content-box:hover { transform: scale(1.05); }
-        h2 { color: #0073e6; }
-        footer { background: #0073e6; color: #fff; padding: 15px; text-align: center; font-size: 18px; margin-top: 20px; }
-        .contact { font-weight: bold; }
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0073e6, #0047ab);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0073e6;
+            font-size: 28px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .content-box {
+            background: #fff;
+            padding: 25px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .content-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .services, .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services .content-box h3 {
+            color: #0047ab;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .services .content-box p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        footer {
+            background: #0047ab;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 60px;
+        }
+
+        .contact {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Button Styles */
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background: #0047ab;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px;
+                padding: 40px 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .content-box {
+                width: 100%;
+                margin: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>Smart Infra Solutions</header>
+    <header>
+        Smart Infra Solutions
+        <p style="font-size: 18px; font-weight: normal; margin-top: 10px;">Building the Future of IT Infrastructure</p>
+    </header>
+
     <section>
         <h2>About Us</h2>
         <div class="about">
             <div class="content-box">
                 <p>At Smart Infra Solutions, we specialize in building comprehensive IT infrastructure for startups, ensuring a seamless and secure technology foundation. From network architecture to cybersecurity, we provide end-to-end solutions for your business.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
             </div>
         </div>
     </section>
+
     <section>
         <h2>Our Services</h2>
         <div class="services">
@@ -63,8 +174,10 @@
             </div>
         </div>
     </section>
-    <footer>
+
+    <footer id="contact">
         <p>Contact Us: <span class="contact">info@smartinfrasolutions.com</span></p>
+        <p style="margin-top: 10px;">&copy; 2023 Smart Infra Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
